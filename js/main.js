@@ -3,6 +3,7 @@ let arrayButtons = Array.from(buttons)
 let screen = document.getElementById("screen")
 const buttonOnOff = document.getElementById('on-off')
 const btnNetflix = document.getElementById("buttontNetflix")
+const btnYoutube = document.getElementById("buttonYoutube")
 let tvOnOf = false;
 
 let zapping = 2
@@ -26,6 +27,15 @@ btnNetflix.addEventListener('click', ()=> {
         screen.classList.remove(screen.classList[screen.classList.length - 1])
         screen.classList.add("netflix")
     }
+})
+
+btnYoutube.addEventListener('click',() => {
+    if (tvOnOf) {
+    screen.classList.remove(screen.classList[screen.classList.lenght -1])
+    screen.classList.add("youtube")
+    }
+
+
 })
 
 const switchTv = () => {

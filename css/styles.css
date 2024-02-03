@@ -20,6 +20,9 @@ body {
 .basicScreen {
     background-color: black;
 }
+.startingScreen {
+    background-image: url("../img/sony.png");
+}
 #remote {
     background-color: rgb(40, 38, 38);
     height: 30em;
@@ -143,4 +146,7 @@ button {
 }
 .netflix {
 background-image: url("../img/perfiles-netflix-avatar.jpg") ;
+}
+.youtube {
+background-image: url("../img/youtube.jpg") ;
 }
