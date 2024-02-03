@@ -1,0 +1,146 @@
+body {
+    background-color: rgb(201, 196, 196);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen {
+    
+    height: 40em;
+    width: 60em;
+    margin: 60px;
+    border-radius: 0.2em;
+
+}
+
+.basicScreen {
+    background-color: black;
+}
+#remote {
+    background-color: rgb(40, 38, 38);
+    height: 30em;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 0.4em;
+
+
+}
+
+.botonesA {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.vacio {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 2px;
+}
+
+
+.botonesD {
+    display: flex;
+    margin: 2px;
+
+}
+
+.volumen {
+    display: flex;
+    flex-direction: column;
+}
+
+.exit-mute {
+    display: flex;
+    flex-direction: column;
+}
+
+.canales {
+    display: flex;
+    flex-direction: column;
+
+}
+
+button {
+    border-radius: 100%;
+    background-color: rgb(29, 28, 28);
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 2px;
+}
+
+.botonesE {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 3px;
+
+}
+
+.red {
+    background-color: red;
+    height: 1.875rem;
+    width: 1.875rem;
+}
+
+.green {
+    background-color: green;
+    height: 1.875rem;
+    width: 1.875rem;
+    
+}
+
+.blue {
+    background-color: blue;
+    height: 1.875rem;
+    width: 1.875rem;
+}
+
+.yellow {
+    background-color: yellow;
+    height: 1.875rem;
+    width: 1.875rem;
+}
+.canal1 {
+    background-image: url("..//img/et-escenas-peliculas-epicas-2.jpg")
+}
+
+.canal2 {
+    background-image: url("../img/La-2-TVE.webp")
+}
+
+.canal3 {
+    background-image: url("../img/desayuno-escenas-peliculas-epicas-29.jpg")
+}
+.canal4 {
+    background-image: url("../img/hp-escenas-peliculas-epicas-11.jpg.crdownload")
+}
+
+.canal5 {
+    background-image: url("../img/american-escenas-peliculas-epicas-22.jpg")
+}
+.canal6 {
+    background-image: url("../img/olvidate-escenas-peliculas-epicas-20.jpg")
+}
+
+.canal7 {
+    background-image: url("../img/piratas-escenas-peliculas-epicas-13.jpg.crdownload")
+}
+.canal8 {
+    background-image: url("../img/alicia-escenas-peliculas-epicas-9.jpg.crdownload")
+}
+
+.canal9 {
+    background-image: url("../img/american-escenas-peliculas-epicas-22.jpg.crdownload")
+}
+.netflix {
+background-image: url("../img/perfiles-netflix-avatar.jpg") ;
+}
