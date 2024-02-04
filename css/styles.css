@@ -13,15 +13,26 @@ body {
     height: 40em;
     width: 60em;
     margin: 60px;
-    border-radius: 0.2em;
+    border-radius: 0.3em;
+    border: 5px solid #d0cfcf;
+    border-color:#4e4d4d;
 
 }
+/* .img {
+    height: 40em;
+    width: 60em;
+    object-fit: cover;
+} */
 
 .basicScreen {
     background-color: black;
 }
 .startingScreen {
     background-image: url("../img/sony.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 #remote {
     background-color: rgb(40, 38, 38);
@@ -88,6 +99,14 @@ button {
 
 }
 
+#buttontNetflix {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+#buttonYoutube {
+    background-color: red ;
+}
 .red {
     background-color: red;
     height: 1.875rem;
@@ -113,40 +132,85 @@ button {
     width: 1.875rem;
 }
 .canal1 {
-    background-image: url("..//img/et-escenas-peliculas-epicas-2.jpg")
+    background-image: url("..//img/et-escenas-peliculas-epicas-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
 }
 
 .canal2 {
-    background-image: url("../img/La-2-TVE.webp")
+    background-image: url("../img/La-2-TVE.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ 
 }
 
 .canal3 {
-    background-image: url("../img/desayuno-escenas-peliculas-epicas-29.jpg")
+    background-image: url("../img/hp-escenas-peliculas-epicas-11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
 }
 .canal4 {
-    background-image: url("../img/hp-escenas-peliculas-epicas-11.jpg.crdownload")
+    background-image: url("../img/piratas-escenas-peliculas-epicas-13.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
 }
 
 .canal5 {
-    background-image: url("../img/american-escenas-peliculas-epicas-22.jpg")
+    background-image: url("../img/avatar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 .canal6 {
-    background-image: url("../img/olvidate-escenas-peliculas-epicas-20.jpg")
+    background-image: url("../img/alicia-escenas-peliculas-epicas-9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .canal7 {
-    background-image: url("../img/piratas-escenas-peliculas-epicas-13.jpg.crdownload")
+    background-image: url("../img/joker.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
 }
 .canal8 {
-    background-image: url("../img/alicia-escenas-peliculas-epicas-9.jpg.crdownload")
+    background-image: url("../img/peppa.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .canal9 {
-    background-image: url("../img/american-escenas-peliculas-epicas-22.jpg.crdownload")
+    background-image: url("../img/diamantes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 .netflix {
-background-image: url("../img/perfiles-netflix-avatar.jpg") ;
+background-image: url("../img/netflix.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+background-size: cover;
 }
 .youtube {
-background-image: url("../img/youtube.jpg") ;
+background-image: url("../img/youtube.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
 }
