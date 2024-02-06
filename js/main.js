@@ -9,9 +9,7 @@ const down = document.getElementById("down")
 let tvOnOf = false;
 let zapping = 1
 const info = document.getElementById("info")
-
-
-
+const infoChannel= document.getElementById("channelInfo")
 
 
 buttonOnOff.addEventListener('click', () => {
@@ -20,8 +18,9 @@ buttonOnOff.addEventListener('click', () => {
         screen.classList.remove(screen.classList[screen.classList.length - 1])
         screen.classList.add("basicScreen")
         screen.classList.remove
-        buttonOnOff.style.backgroundColor = "black"
-        document.getElementById("date").style.color = "black";
+        buttonOnOff.style.backgroundColor = "black"     
+        date.innerText= ""
+        infoChannel.innerText= ""
 
         // todo guardar en zapping el canal donde estamoss    
     } else {
@@ -29,22 +28,17 @@ buttonOnOff.addEventListener('click', () => {
         screen.classList.remove(screen.classList[screen.classList.length - 1])
         screen.classList.add("startingScreen")
         buttonOnOff.style.backgroundColor = "#cecece"
+       
         const fechaHoraString = getDate()
         document.getElementById("date").innerText = fechaHoraString;
-        setInterval(() => {
-        }, 1000);
-
-        setTimeout(() => {
-            document.getElementById('info').remove()
-        }, 5000);
-
-
+       
         // cambia la imagen despues de un tiempo
         setTimeout(function () {
             screen.classList.remove("startingScreen")
             screen.classList.add("canal1")
         }, 3000)
-
+        
+        infoChannel.innerText=zapping
     }
 })
 
@@ -57,7 +51,7 @@ btnNetflix.addEventListener('click', () => {
 
 btnYoutube.addEventListener('click', () => {
     if (tvOnOf) {
-        screen.classList.remove(screen.classList[screen.classList.lenght - 1])
+        screen.classList.remove(screen.classList[screen.classList.length - 1])
         screen.classList.add("youtube")
     }
 
@@ -67,39 +61,35 @@ btnYoutube.addEventListener('click', () => {
 btnUp.addEventListener("click", () => {
     if (tvOnOf) {
         zapping++
-        console.log(zapping);
-        screen.classList.remove(screen.classList[screen.classList.lenght - 1])
+       
+        if (zapping > 9) {
+        zapping = 1    
+    }
+
+        console.log(screen.classList.length - 1);
+        screen.classList.remove(screen.classList[screen.classList.length - 1])
         screen.classList.add("canal" + zapping)
+        infoChannel.innerText=zapping
     }
 }
 )
 
-// down.addEventListener("click", () => {
-// if (tvOnOf) {
-//     zapping--
-//     screen.classList.remove(screen.classList[screen.classList.lenght - 1])
-//     screen.classList.add("canal" - zapping)
-// }
-// }
-// )
-
-
-
-
-
-const switchTv = () => {
-    // if (tvOnOf) {
-    //     tvOnOf = false
-    //     screen.classList.remove(screen.classList[screen.classList.length - 1])
-    //     screen.classList.add("basicScreen")
-    //     buttonOnOff.style.backgroundColor = "black"
-    // } else {
-    //     tvOnOf = true
-    //     screen.classList.remove(screen.classList[screen.classList.length - 1])
-    //     screen.classList.add("canal2")
-    //     buttonOnOff.style.backgroundColor = "green"
-    // }
+down.addEventListener("click", (event) => {
+if (tvOnOf) {
+    zapping--
+    
+    if (zapping < 1) {
+        zapping = 9    
+    }
+    
+    screen.classList.remove(screen.classList[screen.classList.length - 1])
+    screen.classList.add("canal" + zapping)
+    infoChannel.innerText=zapping
+    
 }
+}
+)
+
 
 arrayButtons.map(
     item => {
@@ -109,7 +99,10 @@ arrayButtons.map(
 
                 screen.classList.remove(screen.classList[screen.classList.length - 1])
                 screen.classList.add("canal" + evento.target.id.slice(-1))
-
+                
+                zapping = evento.target.id.slice(-1)
+                infoChannel.innerText=zapping
+                console.log(zapping);
 
 
             }

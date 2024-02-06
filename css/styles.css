@@ -31,7 +31,7 @@ body {
     background-color: black;
 }
 .startingScreen {
-    background-image: url("../img/sony.png");
+    background-image: url("../img/SONNYY.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -164,7 +164,7 @@ button {
 }
 
 .canal2 {
-    background-image: url("../img/La-2-TVE.webp");
+    background-image: url("../img/Captura\ de\ pantalla\ 2024-02-05\ 211459.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -198,7 +198,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    
 }
 
 .canal7 {
@@ -232,7 +232,7 @@ background-position: center;
 background-size: cover;
 }
 .youtube {
-background-image: url("../img/youtube.jpg");
+background-image: url("../img/youtube.png");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -240,7 +240,7 @@ background-position: center;
 }
 
 #info {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.0);
     color: white;
     height: 6rem;
     display: flex;
