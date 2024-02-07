@@ -22,22 +22,19 @@ buttonOnOff.addEventListener('click', () => {
         date.innerText= ""
         infoChannel.innerText= ""
 
-        // todo guardar en zapping el canal donde estamoss    
+        // guardar en zapping el canal donde estamoss    
     } else {
         tvOnOf = true
         screen.classList.remove(screen.classList[screen.classList.length - 1])
         screen.classList.add("startingScreen")
         buttonOnOff.style.backgroundColor = "#cecece"
-       
         const fechaHoraString = getDate()
         document.getElementById("date").innerText = fechaHoraString;
-       
-        // cambia la imagen despues de un tiempo
+        // cambia la pantalla inicia despues de 3 segundos
         setTimeout(function () {
             screen.classList.remove("startingScreen")
             screen.classList.add("canal1")
-        }, 3000)
-        
+        }, 3000) 
         infoChannel.innerText=zapping
     }
 })
@@ -61,11 +58,9 @@ btnYoutube.addEventListener('click', () => {
 btnUp.addEventListener("click", () => {
     if (tvOnOf) {
         zapping++
-       
         if (zapping > 9) {
         zapping = 1    
     }
-
         console.log(screen.classList.length - 1);
         screen.classList.remove(screen.classList[screen.classList.length - 1])
         screen.classList.add("canal" + zapping)
