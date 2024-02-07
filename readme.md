@@ -1,6 +1,6 @@
-# Tele interactiva 
 
-![TELE INTERACTIVA](https://github.com/............)
+
+![TELE INTERACTIVA]
 
 Este proyecto ha sido realizado como el Proyecto 2 del Bootcamp de Full Stack Developer en Geekshubs Academy, en cual se propone el desarrollo de una interfaz de televisión
 interactiva con un mando a distancia utilizando tecnologías web como HTML, CSS y
@@ -9,7 +9,7 @@ funcional que simule la interacción con una televisión real.
 
 ## 🚀 Vista previa
 <img src="./img/0206 (1)(1).gif">
-Si deseas ver la televisión interactiva, simplemente [accede desde aquí](https://).
+Si deseas ver la televisión interactiva, simplemente [accede desde aquí](https://klauha.github.io/proyecto2-tele-interactiva///).
 
 ## 🌟 Características
 
@@ -20,9 +20,11 @@ de una televisión.
 hora actual y la fecha.
 - **Mando a distancia**: 
 - Implementación de un mando a distancia virtual utilizando HTML y CSS.
-- Inclusión de botones para cambiar canales, ajustar el volumen, y acceder a funciones adicionales.
+- Inclusión de botonecs: funcionales On, cambio de canales, netflix y youtube, el resto de botones se han añadido simplemente por estética del mando.
 - **Selección de canales**: 
 - Uso del DOM para cambiar dinámicamente la información del canal y la imagen de fondo al cambiar de canal.
+
+
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -34,7 +36,7 @@ hora actual y la fecha.
 ## ✒️ Autor
 
 - **Claudia Álvaro Cano** - Desarrolladora del proyecto
-  - [GitHub](https://github.com/klauha) - [LinkedIn](https://www.linkedin.com/in/claudia-alvaro-cano-47860538/) 
+- [GitHub](https://github.com/klauha) - [LinkedIn](https://www.linkedin.com/in/claudia-alvaro-cano-47860538/) 
 
 
 ## 🎓 Agradecimientos
