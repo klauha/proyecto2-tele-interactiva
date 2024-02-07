@@ -8,7 +8,7 @@ JavaScript. El objetivo principal es crear una experiencia de usuario intuitiva 
 funcional que simule la interacción con una televisión real.
 
 ## 🚀 Vista previa
-
+<img src="./img/0206 (1)(1).gif">
 Si deseas ver la televisión interactiva, simplemente [accede desde aquí](https://).
 
 ## 🌟 Características
